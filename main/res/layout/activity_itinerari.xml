@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="vertical"
-    tools:context="com.example.android.xyztouristattractions.itinerariActivity">
+    tools:context="com.example.android.xyztouristattractions.ui.itinerariActivity">
 
     <ImageView
         android:id="@+id/mapItinerario"

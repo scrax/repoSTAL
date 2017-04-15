@@ -1,4 +1,4 @@
-package com.example.android.xyztouristattractions;
+package com.example.android.xyztouristattractions.ui;
 
 import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.service.UtilityService;
 import com.example.android.xyztouristattractions.ui.AttractionListActivity;

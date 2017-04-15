@@ -34,7 +34,7 @@
         android:label="@string/app_name"
         android:theme="@style/XYZAppTheme">
         <activity
-            android:name=".introActivity"
+            android:name=".ui.introActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,7 @@
         <activity
             android:name=".ui.AttractionListActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".introActivity"
+            android:parentActivityName=".ui.introActivity"
             android:theme="@style/XYZAppTheme.Detail" />
         <activity
             android:name=".ui.DetailActivity"
@@ -53,10 +53,11 @@
             android:parentActivityName=".ui.AttractionListActivity"
             android:theme="@style/XYZAppTheme.Detail" />
         <activity
-            android:name=".itinerariActivity"
+            android:name=".ui.itinerariActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".ui.DetailActivity"
+            android:parentActivityName=".ui.introActivity"
             android:theme="@style/XYZAppTheme.Detail" />
+        <!--    -->
 
         <receiver android:name=".service.UtilityReceiver" />
 
