@@ -20,11 +20,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".AttractionListFragment">
+    tools:context=".ui.AttractionListFragment">
 
-
-
-            <com.example.android.xyztouristattractions.ui.AttractionsRecyclerView
+        <com.example.android.xyztouristattractions.ui.AttractionsRecyclerView
                 android:id="@android:id/list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,7 +30,7 @@
                 app:layoutManager="GridLayoutManager"
                 app:spanCount="@integer/list_columns" />
 
-            <TextView
+        <TextView
                 android:id="@android:id/empty"
                 style="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
@@ -40,7 +38,6 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/empty_list" />
-
 
 
 </LinearLayout>

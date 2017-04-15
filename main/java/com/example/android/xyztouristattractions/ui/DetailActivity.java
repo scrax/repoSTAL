@@ -28,6 +28,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.android.xyztouristattractions.R;
+import com.example.android.xyztouristattractions.itinerariActivity;
 
 /**
  * The tourist attraction detail activity screen which contains the details of
@@ -66,5 +67,11 @@ public class DetailActivity extends AppCompatActivity {
                     .add(R.id.container, DetailFragment.createInstance(attraction))
                     .commit();
         }
+    }
+
+    //Codice per aprire pagina itinerario
+    public void caricaItinerario(View view) {
+        Intent intent = new Intent(this, itinerariActivity.class);
+        startActivity(intent);
     }
 }

@@ -25,14 +25,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="100">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="36"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             android:transitionName="image" />
 
@@ -40,7 +39,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="64"
+            android:layout_weight="3"
             android:clipToPadding="false"
             android:padding="@dimen/margin_small"
             android:scrollbarStyle="outsideOverlay">
@@ -103,51 +102,55 @@
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:textColor="?android:attr/textColorLink" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <LinearLayout
+                    android:id="@+id/cardIt"
+                    android:onClick="caricaItinerario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="2dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/paneveggio" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
                     android:background="#ffffff"
-                    android:elevation="2dp"
-                    android:padding="@dimen/small_margin"
-                    android:text="A piedi tra la storia"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-                    android:textColor="?android:attr/textColorLink" />
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:elevation="2dp"
-                    android:padding="@dimen/small_margin"
-                    android:text="E' uno degli itinerari che permette di osservare e vivere alcuni degli scenari naturali..." />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/paneveggio" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_small"
-                    android:background="#ffffff"
-                    android:elevation="2dp"
-                    android:padding="@dimen/standard_margin"
-                    android:text="VISITA"
-                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-                    android:textColor="@android:color/holo_red_light" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/small_margin"
+                        android:text="A piedi tra la storia"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textColor="?android:attr/textColorLink" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/small_margin"
+                        android:text="E' uno degli itinerari che permette di osservare e vivere alcuni degli scenari naturali..." />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/standard_margin"
+                        android:text="VISITA"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="@android:color/holo_red_light" />
+                </LinearLayout>
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="2dp"
+                    android:elevation="4dp"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/canali" />
 
@@ -156,7 +159,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:elevation="2dp"
+                    android:elevation="4dp"
                     android:padding="@dimen/small_margin"
                     android:text="Tra boschi e malghe"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
@@ -167,7 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
-                    android:elevation="2dp"
+                    android:elevation="4dp"
                     android:padding="@dimen/small_margin"
                     android:text="La Val Canali è considerata una della più belle valli alpine e rappresenta l'accesso..." />
 

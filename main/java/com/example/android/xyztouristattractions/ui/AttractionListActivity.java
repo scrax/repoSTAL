@@ -156,7 +156,7 @@ public class AttractionListActivity extends AppCompatActivity implements
                 .show();
     }
 
-    /**
+    /*
      * Show a basic debug dialog to provide more info on the built-in debug
      * options.
      */
