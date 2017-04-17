@@ -76,12 +76,12 @@ public class TouristAttractions {
             ));
 
             add(new Attraction(
-                    "Punto di sviluppo",
-                    "Qui si sfrugna per le view. Molto sudore poco capire, questo è il dur dire.",
+                    "Parco Naturale zonale della Maranza",
+                    "Rifugio Maranza, via cimirlo 1 TN, Trentino.",
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dui in ipsum suscipit aliquet pretium aliquet odio. Nam posuere nunc sed risus molestie varius. Suspendisse posuere faucibus urna, id vestibulum ante iaculis et. Vivamus placerat suscipit sem, a tempor nunc vehicula ac. Ut libero velit, dapibus sit amet euismod vel, dignissim a nisl.\n\nDonec non dui non felis laoreet malesuada. Fusce ac metus ultrices, fermentum felis quis, varius velit. Donec ac felis semper, scelerisque diam sed, dignissim risus. Maecenas vel semper sapien. Fusce euismod justo posuere, efficitur risus tincidunt, congue tellus. In hac habitasse platea dictumst. Sed lobortis risus consequat vehicula facilisis.\n\nIn hendrerit, neque in gravida rutrum, purus enim aliquet lectus, sit amet vulputate tortor lacus at sem. Aenean lorem metus, finibus rhoncus eros at, ullamcorper fringilla velit. Nulla vitae porttitor metus, quis gravida lectus. In rhoncus, diam a elementum luctus, erat nisi tempus ex, in porta est.",
-                    "Numeri utili",
-                    Uri.parse("https://lh5.googleusercontent.com/-qX43g6s92LY/VGLaTT3N35I/AAAAAAAAAC8/BbueQmch0Rw/w600-no/68001.jpg"),
-                    Uri.parse("https://lh6.googleusercontent.com/-SQ6T1Ure6l8/VGLaTg2iGuI/AAAAAAAAACo/m6_RkTW2G1o/w600-no/IMG_20140201_082851.jpg"),
+                    "Rifugio Maranza\nTel. 0461999999\n\nSoccorso Alpino\n1 1 8",
+                    Uri.parse("http://www.trentinotrailrunning.it/images/gallerie-articoli/marzola/IMG-037.jpg"),
+                    Uri.parse("http://1.bp.blogspot.com/-KjT5Zb7jZ0k/VFU0xWhyZfI/AAAAAAAAD9g/5YZnc8CBYnM/s1600/Marzola.JPG"),
                     new LatLng(46.0449298,11.1419159),
                     CITY_TRENTO
             ));

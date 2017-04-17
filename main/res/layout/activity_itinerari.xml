@@ -1,121 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="vertical"
-    tools:context="com.example.android.xyztouristattractions.ui.itinerariActivity">
-
-    <ImageView
-        android:id="@+id/mapItinerario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/paneveggio" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="GET DIRECTIONS" />
+    android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="#E8F5E9"
+            android:orientation="vertical"
+            tools:context="com.example.android.xyztouristattractions.ui.itinerariActivity">
 
             <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:id="@+id/mapItinerario"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_recent_history" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mappa" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="2 h 30 min"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_myplaces" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="9 Km"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Il percorso geologico"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="?android:attr/textColorLink" />
 
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="16dp"
+                        android:text="GET DIRECTIONS"
+                        android:textColor="?attr/colorBackgroundFloating" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="2"
+                            android:alpha="0.5"
+                            app:srcCompat="@drawable/ic_query_builder_black_48dp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/tempoPrevisto"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:alpha="0.5"
+                            app:srcCompat="@drawable/ic_trending_flat_black_48dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/lungPerc"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:weightSum="20">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.5"
+                            app:srcCompat="@drawable/ic_local_florist_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.5"
+                            android:elevation="0dp"
+                            app:srcCompat="@drawable/ic_panorama_black_24dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text="@string/tot_voti"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            tools:text="@string/tot_voti" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="0.5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/descInteresseSentieroGeo"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:text="@string/descInteresseSentieroGeo" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Punti d'interesse"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="?android:attr/textColorLink" />
+
+                    <LinearLayout
+                        android:id="@+id/cardInteresse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:background="#ffffff"
+                        android:elevation="4dp"
+                        android:orientation="vertical">
+                        <!--android:onClick="caricaInteresse"-->
+
+
+                        <TextView
+                            android:id="@+id/titoloInteresse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/small_margin"
+                            android:text="Passo Valles"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="?android:attr/textColorLink" />
+
+                        <ImageView
+                            android:id="@+id/imageInteresse"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/valles" />
+
+
+                        <TextView
+                            android:id="@+id/descInteresse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/small_margin"
+                            android:text="Il passo Valles (Pas de Valès nel ladino di Falcade) è un valico alpino delle Dolomiti..." />
+
+                        <TextView
+                            android:id="@+id/visitaText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/standard_margin"
+                            android:text="VISITA"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            android:textColor="@android:color/holo_red_light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView10"
-            android:layout_toEndOf="@+id/imageView10"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_local_florist_black_24dp" />
-
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageView10"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_panorama_black_24dp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView10"
-                android:gravity="center_vertical"
-                android:text="15 voti"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView10"
-                android:layout_toRightOf="@+id/textView10" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ratingBar"
-                android:text="descriozione itinerario"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-        </RelativeLayout>
-
-    </LinearLayout>
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
 
