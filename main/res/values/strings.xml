@@ -46,9 +46,18 @@ appear further down your stream
     <string name="action_map">Show on Map</string>
     <string name="permission_explanation">Allow this app to use your location to show distance to attractions?</string>
     <string name="permission_explanation_action">Let\'s do it!</string>
-    <string name="descInteresseSentieroGeo">Trekking ad anello che avvicina alla conoscenza delle antiche roccie permiane e triassiche, a cavallo di un momento critico della storia biologica del nostro pianeta. Sono rocce di circa 280/250 milioni di anni fa, testimoni di una delle grandi estinzioni di cui fu partecipe il nostro pianeta, che portò alla scomparsa del 90% di specie allora viventi.</string>
+    <string name="descInteresseSentieroGeo">
+        <![CDATA[
+        Trekking ad anello che avvicina alla conoscenza delle antiche roccie permiane e triassiche,
+        a cavallo di un momento critico della storia biologica del nostro pianeta.
+        Sono rocce di circa 280/250 milioni di anni fa, testimoni di una delle grandi estinzioni
+        di cui fu partecipe il nostro pianeta, che portò alla
+        scomparsa del 90% di specie allora viventi.
+        ]]>
+    </string>
     <string name="lungPerc">9 Km</string>
     <string name="tempoPrevisto">2 h 30 min</string>
     <string name="tot_voti">15 voti</string>
+    <string name="share">share</string>
 
 </resources>
