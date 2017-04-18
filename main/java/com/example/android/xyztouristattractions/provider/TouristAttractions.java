@@ -61,7 +61,7 @@ public class TouristAttractions {
                     Uri.parse("http://www.magicoveneto.it/Trentino/Paneveggio/C01-Parco-Naturale-Paneveggio-Pale-San-Martino.jpg"),/*Prima immagine*/
                     Uri.parse("http://www.aptcavalese.it/images/stories/mappe-trekking/lagorai.jpg"),/*Immagine mappa*/
                     new LatLng(46.1991488,11.8663663), /*coordinate*/
-                    CITY_TRENTO /*citta per ora solo trento*/
+                    "Parco naturale Paneveggio Pale di S.Martino" /*stringa ricerca in maps*/
             ));
 
             add(new Attraction(
@@ -72,7 +72,7 @@ public class TouristAttractions {
                     Uri.parse("https://www.ufficiostampa.provincia.tn.it/var/002/storage/images/media/immagini-comunicati-stampa/le-lobbie-in-adamello-image/760878-1-ita-IT/Le-Lobbie-in-Adamello_imagefullwide.jpg"),/* Riga per foto. indirizzo da inserire tra virgolette. solo da internet */
                     Uri.parse("http://www.pnab.it/fileadmin/parco/Mobilità/sentieri/muoversi_a_piedi_h.jpg"),/** Riga per mappa. indirizzo da inserire tra virgolette. solo da internet */
                     new LatLng(46.2072398,10.7185963),
-                    CITY_TRENTO
+                    "Parco naturale provinciale dell'Adamello-Brenta"
             ));
 
             add(new Attraction(
@@ -83,11 +83,11 @@ public class TouristAttractions {
                     Uri.parse("http://www.suedtirolerland.it/images/cms/754x435/B-P1070241-Blaetterbachschlucht-Weisshorn.JPG"),
                     Uri.parse("http://parchi-naturali.provincia.bz.it/images/map_MonteCorno.jpg"),
                     new LatLng(46.3227165,11.3467833),
-                    CITY_TRENTO
+                    "Parco Naturale Monte Corno centro visitatori"
             ));
 
             add(new Attraction(
-                    "Riserva regionale Tre Cime del Monte Bondone.",
+                    "Riserva regionale Tre Cime del Monte Bondone",
                     "Via Torre Verde 7, 38122 Trento (TN), Trentino.",
                     "La Riserva naturale integrale delle Tre Cime del Monte Bondone è un'area naturale protetta del Trentino-Alto Adige istituita nel 1968. Occupa una superficie di 223,14 ha tra i 1580 e 2179 metri sul livello del mare nella Provincia Autonoma di Trento. " +
                     "Il territorio della valle è di origine glaciale e raggiunge tre monti; questi sono, in ordine crescente di altezza: il Dos d'Abramo (2.140 m), il Cornetto (2.176 m) e la Cima Verde (2.102 m).",
@@ -95,7 +95,7 @@ public class TouristAttractions {
                     Uri.parse("http://www.lagodigardaescursioni.it/escursioni-lago-garda-montagna/Bondone-escursione/img-gr/02.jpg"),
                     Uri.parse("https://comune.info/uploads/mappe-comune/cimone/satellite-strade-hibrida-cimone.png"),
                     new LatLng(46.0703951,11.118943),
-                    CITY_TRENTO
+                    "Riserva regionale Tre Cime del Monte Bondone"
             ));
 
             add(new Attraction(
@@ -109,7 +109,7 @@ public class TouristAttractions {
                     Uri.parse("https://www.visittrentino.info/website/var/tmp/image-thumbnails/110000/117027/thumb__contentgallery/ecomuseo-dell-argentario_2.jpeg"),
                     Uri.parse("http://ecoargentario.it/media/files/PieghevoleCartina_EcomuseoArgentario_crocini.jpg"),
                     new LatLng(46.0851318,11.1615498),
-                    CITY_TRENTO
+                    "Ecomuseo Argentario c/o biblioteca GB borsieri"
             ));
 
         }});
