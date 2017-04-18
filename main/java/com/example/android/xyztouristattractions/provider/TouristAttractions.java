@@ -55,7 +55,11 @@ public class TouristAttractions {
         put(CITY_TRENTO, new ArrayList<Attraction>() {{
             add(new Attraction(
                     "Parco naturale Paneveggio Pale di S.Martino", /*Titolo*/
+<<<<<<< HEAD
                     "Località Castelpietra 2, 38054 Tonadico (TN), Trentino.", /*Indirizzo I scheda*/
+=======
+                    "Località Paneveggio 7, Predazzo TN, Trentino.", /*Indirizzo I scheda*/
+>>>>>>> master
                     "Il territorio del Parco Naturale Paneveggio Pale di S. Martino è situato nelle Alpi Orientali (Dolomiti Trentino Orientale) e si sviluppa intorno ai bacini idrografici dei torrenti Cismon, Vanoi e Travignolo,coprendo la Val Venegia, la Foresta di Paneveggio, un'ampia porzione del Gruppo delle Pale di S.Martino, l'estremità orientale della catena del Lagorai ed una parte della catena Lusia - Cima bocche, aree che costituiscono Siti di Importanza Comunitaria e Zone di Protezione Speciale all'interno della Rete Europea \"Natura 2000\".",/*Descrizione*/
                     "Sede del parco Villa Welsperg\nTel. 0439 765973\n\nCentro Visitatori Paneveggio\nTel. 0462 575283\n\nCentro Visitatori S.Martino di Castrozza\nTel. 0439 768859\n\nCasa del Sentiero Etnografico del Vanoi\nTel. 0439 710049 (dal 1 luglio alla seconda domenica di settembre, negli altri periodi\nEcomuseo del Vanoi\nTel. 0439 719106",/*Numeri utilit*/
                     Uri.parse("http://www.magicoveneto.it/Trentino/Paneveggio/C01-Parco-Naturale-Paneveggio-Pale-San-Martino.jpg"),/*Prima immagine*/
@@ -66,6 +70,7 @@ public class TouristAttractions {
 
             add(new Attraction(
                     "Parco naturale provinciale dell'Adamello-Brenta",
+<<<<<<< HEAD
                     "Via Nazionale 24, 38080 Strembo (TN), Trentino.",
                     "Il Parco Naturale Adamello Brenta è la più vasta area protetta del Trentino, situato nel Trentino occidentale, con i suoi 620,51 kmq comprende i gruppi montuosi dell'Adamello e del Brenta, separati dalla Val Rendena e compresi tra le valli di Non, di Sole e Giudicarie. E' interessato dalla presenza di 48 laghi e dal ghiacciaio dell'Adamello, uno dei più estesi d'Europa.",
                     "Sede del parco Strembo\nTel. 0465 806666",
@@ -73,6 +78,15 @@ public class TouristAttractions {
                     Uri.parse("http://www.pnab.it/fileadmin/parco/Mobilità/sentieri/muoversi_a_piedi_h.jpg"),/** Riga per mappa. indirizzo da inserire tra virgolette. solo da internet */
                     new LatLng(46.2072398,10.7185963),
                     "Parco naturale provinciale dell'Adamello-Brenta"
+=======
+                    "Via Nazionale, 24 38080 Strembo (TN).",
+                    "Il Parco Naturale Adamello Brenta è la più vasta area protetta del Trentino, situato nel Trentino occidentale, con i suoi 620,51 kmq comprende i gruppi montuosi dell'Adamello e del Brenta, separati dalla Val Rendena e compresi tra le valli di Non, di Sole e Giudicarie. E' interessato dalla presenza di 48 laghi e dal ghiacciaio dell'Adamello, uno dei più estesi d'Europa.",
+                    "Sede del Parco Strembo\nTel. 0465 806666",
+                    Uri.parse("https://www.ufficiostampa.provincia.tn.it/var/002/storage/images/media/immagini-comunicati-stampa/le-lobbie-in-adamello-image/760878-1-ita-IT/Le-Lobbie-in-Adamello_imagefullwide.jpg"),/* Riga per foto. indirizzo da inserire tra virgolette. solo da internet */
+                    Uri.parse("http://www.pnab.it/fileadmin/parco/Mobilità/sentieri/muoversi_a_piedi_h.jpg"),/** Riga per mappa. indirizzo da inserire tra virgolette. solo da internet */
+                    new LatLng(46.2072398,10.7185963),
+                    CITY_TRENTO
+>>>>>>> master
             ));
 
             add(new Attraction(
