@@ -110,7 +110,7 @@ public class DetailFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(Constants.MAPS_INTENT_URI +
-                        Uri.encode(mAttraction.name + ", " + mAttraction.city)));
+                        Uri.encode(mAttraction.city)));
                 startActivity(intent);
             }
         });
