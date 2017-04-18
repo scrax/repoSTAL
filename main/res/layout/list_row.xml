@@ -21,9 +21,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/fab_margin"
+    android:layout_margin="8dp"
     android:background="#FFFFFF"
-    android:elevation="2dp"
+    android:elevation="4dp"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -84,8 +84,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/margin_small"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_small">
 
             <ImageView
                 android:id="@+id/imageView7"

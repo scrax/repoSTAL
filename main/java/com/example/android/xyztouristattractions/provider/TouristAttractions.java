@@ -54,7 +54,7 @@ public class TouristAttractions {
 
         put(CITY_TRENTO, new ArrayList<Attraction>() {{
             add(new Attraction(
-                    "Parco Nat. Paneveggio Pale di S.Martino", /*Titolo*/
+                    "Parco naturale Paneveggio Pale di S.Martino", /*Titolo*/
                     "Località Paneveggio 7, Predazzo TN, Trentino.", /*Indirizzo I scheda*/
                     "Il territorio del Parco Naturale Paneveggio Pale di S. Martino è situato nelle Alpi Orientali (Dolomiti Trentino Orientale) e si sviluppa intorno ai bacini idrografici dei torrenti Cismon, Vanoi e Travignolo,coprendo la Val Venegia, la Foresta di Paneveggio, un'ampia porzione del Gruppo delle Pale di S.Martino, l'estremità orientale della catena del Lagorai ed una parte della catena Lusia - Cima bocche, aree che costituiscono Siti di Importanza Comunitaria e Zone di Protezione Speciale all'interno della Rete Europea \"Natura 2000\".",/*Descrizione*/
                     "Sede del Parco Villa Welsperg\nTel. 0439 765973\n\nCentro Visitatori Paneveggio\nTel. 0462 575283\n\nCentro Visitatori S.Martino di Castrozza\nTel. 0439 768859\n\nCasa del Sentiero Etnografico del Vanoi\nTel. 0439 710049 (dal 1 luglio alla seconda domenica di settembre, negli altri periodi\nEcomuseo del Vanoi\nTel. 0439 719106",/*Numeri utilit*/
@@ -65,13 +65,13 @@ public class TouristAttractions {
             ));
 
             add(new Attraction(
-                    "MUSE Trento",
-                    "via Del MUSE, Trento.",
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut nulla neque. Morbi nec felis vel neque rhoncus malesuada. Mauris non nisi est. Nunc in ipsum euismod, suscipit dolor eget, efficitur nisi. Integer venenatis mauris mauris, quis luctus risus pellentesque a. Duis tempus est at ligula vehicula fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nNam ut sodales nibh, euismod aliquet lectus. Curabitur ornare dictum nisi, at faucibus magna. Morbi tempus nibh sed sodales volutpat. Etiam sodales, turpis sit amet porttitor tristique, libero libero faucibus est, viverra dictum risus ipsum vel augue. Nulla dolor magna, iaculis ac ornare id, fermentum eget massa. Sed mattis, odio nec sodales vehicula, neque metus ullamcorper nulla, sit amet ullamcorper risus lectus a ipsum. Curabitur venenatis feugiat quam nec elementum. Curabitur a interdum urna. Curabitur tincidunt tortor eget neque condimentum blandit. Etiam imperdiet, enim nec blandit convallis, nunc augue.",
-                    "Sede del Parco Villa Welsperg\nTel. 0439 765973\n\nCentro Visitatori Paneveggio\nTel. 0462 575283\n\nCentro Visitatori S.Martino di Castrozza\nTel. 0439 768859\n\nCasa del Sentiero Etnografico del Vanoi\nTel. 0439 710049 (dal 1 luglio alla seconda domenica di settembre, negli altri periodi\nEcomuseo del Vanoi\nTel. 0439 719106",
-                    Uri.parse("https://c1.staticflickr.com/9/8611/15450870504_a8c317183f_b.jpg"),/* Riga per foto. indirizzo da inserire tra virgolette. solo da internet */
-                    Uri.parse("https://lh4.googleusercontent.com/-ch9Kk-7pD68/VGLkCNh5niI/AAAAAAAAADc/ztxkRHWX-po/w600-no/DSC_2739.JPG"),/** Riga per mappa. indirizzo da inserire tra virgolette. solo da internet */
-                    new LatLng(46.0614453,11.1164571),
+                    "Parco naturale provinciale dell'Adamello-Brenta",
+                    "Via Nazionale, 24 38080 Strembo (TN).",
+                    "Il Parco Naturale Adamello Brenta è la più vasta area protetta del Trentino, situato nel Trentino occidentale, con i suoi 620,51 kmq comprende i gruppi montuosi dell'Adamello e del Brenta, separati dalla Val Rendena e compresi tra le valli di Non, di Sole e Giudicarie. E' interessato dalla presenza di 48 laghi e dal ghiacciaio dell'Adamello, uno dei più estesi d'Europa.",
+                    "Sede del Parco Strembo\nTel. 0465 806666",
+                    Uri.parse("https://www.ufficiostampa.provincia.tn.it/var/002/storage/images/media/immagini-comunicati-stampa/le-lobbie-in-adamello-image/760878-1-ita-IT/Le-Lobbie-in-Adamello_imagefullwide.jpg"),/* Riga per foto. indirizzo da inserire tra virgolette. solo da internet */
+                    Uri.parse("http://www.pnab.it/fileadmin/parco/Mobilità/sentieri/muoversi_a_piedi_h.jpg"),/** Riga per mappa. indirizzo da inserire tra virgolette. solo da internet */
+                    new LatLng(46.2072398,10.7185963),
                     CITY_TRENTO
             ));
 
