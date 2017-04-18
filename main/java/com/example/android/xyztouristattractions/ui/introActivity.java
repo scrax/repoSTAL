@@ -39,12 +39,12 @@ public class introActivity extends AppCompatActivity  implements
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
             case R.id.test_notification:
-                UtilityService.triggerWearTest(this, false);
+                //UtilityService.triggerWearTest(this, false);
                 showDebugDialog(R.string.action_test_notification,
                         R.string.action_test_notification_dialog);
                 return true;
             case R.id.test_microapp:
-                UtilityService.triggerWearTest(this, true);
+                //UtilityService.triggerWearTest(this, true);
                 showDebugDialog(R.string.action_test_microapp,
                         R.string.action_test_microapp_dialog);
                 return true;
