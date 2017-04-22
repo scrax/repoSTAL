@@ -59,5 +59,18 @@ appear further down your stream
     <string name="tempoPrevisto">2 h 30 min</string>
     <string name="tot_voti">15 voti</string>
     <string name="share">share</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Search</string>
+
+    <string name="nav_settings">Settings</string>
+    <string name="nav_it_compiuti">Itinerari Compiuti</string>
+    <string name="nav_diario">Diario</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_send">Send</string>
+    <string name="nav_communicate">Communicate</string>
+    <string name="desc_diario">Sul diario vengono salvati i punti d\'interesse e gli itinerari che hai apprezzato di più durante le tue escursioni</string>
+    <string name="punti_salvati">punti d\'interesse salvati:</string>
 
 </resources>

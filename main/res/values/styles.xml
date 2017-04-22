@@ -24,14 +24,17 @@
         <item name="colorControlHighlight">?colorAccent</item>
     </style>
 
-    <style name="XYZAppTheme" parent="XYZAppTheme.Base" />
+    <style name="XYZAppTheme" parent="XYZAppTheme.Base">
+    </style>
 
     <style name="XYZAppTheme.Detail">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="actionBarStyle">@style/ActionBar.Detail</item>
     </style>
 
-    <style name="ActionBar.Detail" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="ActionBar.Detail" parent="Widget.AppCompat.Light.ActionBar.Solid">
         <item name="background">@color/transparent_actionbar_background</item>
         <item name="displayOptions">showHome|homeAsUp</item>
     </style>
