@@ -69,7 +69,7 @@ public class DetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         setHasOptionsMenu(true);
-        View view = inflater.inflate(R.layout.fragment_detail, container, false);
+        View view = inflater.inflate(R.layout.parc_detail, container, false);
         String attractionName = getArguments().getString(EXTRA_ATTRACTION);
         mAttraction = findAttraction(attractionName);
 

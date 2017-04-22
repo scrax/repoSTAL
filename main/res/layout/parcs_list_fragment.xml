@@ -20,24 +20,25 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".ui.AttractionListFragment">
+    tools:context=".ui.ParcsListFragment">
 
-        <com.example.android.xyztouristattractions.ui.AttractionsRecyclerView
-                android:id="@android:id/list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none|vertical"
-                app:layoutManager="GridLayoutManager"
-                app:spanCount="@integer/list_columns" />
+    <com.example.android.xyztouristattractions.ui.ParcsRecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:scrollbars="none|vertical"
+        app:layoutManager="GridLayoutManager"
+        app:spanCount="@integer/list_columns" />
 
-        <TextView
-                android:id="@android:id/empty"
-                style="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/empty_list" />
+    <TextView
+        android:id="@android:id/empty"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/empty_list" />
 
 
 </LinearLayout>

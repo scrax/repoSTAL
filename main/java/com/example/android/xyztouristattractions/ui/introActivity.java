@@ -12,8 +12,6 @@ import android.widget.Toast;
 
 import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.common.Utils;
-import com.example.android.xyztouristattractions.service.UtilityService;
-import com.example.android.xyztouristattractions.ui.AttractionListActivity;
 
 public class introActivity extends AppCompatActivity  implements
         ActivityCompat.OnRequestPermissionsResultCallback {
@@ -71,7 +69,7 @@ public class introActivity extends AppCompatActivity  implements
     }
 
     public void caricaLista(View view) {
-        Intent intent = new Intent(this, AttractionListActivity.class);
+        Intent intent = new Intent(this, ParcsListActivity.class);
         startActivity(intent);
     }
 }

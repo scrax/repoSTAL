@@ -11,7 +11,7 @@ public class itinerariActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_itinerari);
+        setContentView(R.layout.activity_itinerario);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

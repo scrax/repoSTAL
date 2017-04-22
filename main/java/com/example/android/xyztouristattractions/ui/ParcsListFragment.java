@@ -52,16 +52,16 @@ import static com.example.android.xyztouristattractions.provider.TouristAttracti
 /**
  * The main tourist attraction fragment which contains a list of attractions
  * sorted by distance (contained inside
- * {@link com.example.android.xyztouristattractions.ui.AttractionListActivity}).
+ * {@link ParcsListActivity}).
  */
-public class AttractionListFragment extends Fragment {
+public class ParcsListFragment extends Fragment {
 
     private AttractionAdapter mAdapter;
     private LatLng mLatestLocation;
     private int mImageSize;
     private boolean mItemClicked;
 
-    public AttractionListFragment() {}
+    public ParcsListFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -74,9 +74,9 @@ public class AttractionListFragment extends Fragment {
         List<Attraction> attractions = loadAttractionsFromLocation(mLatestLocation);
         mAdapter = new AttractionAdapter(getActivity(), attractions);
 
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
-        AttractionsRecyclerView recyclerView =
-                (AttractionsRecyclerView) view.findViewById(android.R.id.list);
+        View view = inflater.inflate(R.layout.parcs_list_fragment, container, false);
+        ParcsRecyclerView recyclerView =
+                (ParcsRecyclerView) view.findViewById(android.R.id.list);
         recyclerView.setEmptyView(view.findViewById(android.R.id.empty));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(mAdapter);
@@ -149,7 +149,7 @@ public class AttractionListFragment extends Fragment {
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(mContext);
-            View view = inflater.inflate(R.layout.list_row, parent, false);
+            View view = inflater.inflate(R.layout.parc_list_row, parent, false);
             return new ViewHolder(view, this);
         }
 
