@@ -48,22 +48,22 @@ import static com.example.android.xyztouristattractions.provider.TouristAttracti
 /**
  * The tourist attraction detail fragment which contains the details of a
  * a single attraction (contained inside
- * {@link com.example.android.xyztouristattractions.ui.DetailActivity}).
+ * {@link ToursListActivity}).
  */
-public class DetailFragment extends Fragment {
+public class ToursListFragment extends Fragment {
 
     private static final String EXTRA_ATTRACTION = "attraction";
     private Attraction mAttraction;
 
-    public static DetailFragment createInstance(String attractionName) {
-        DetailFragment detailFragment = new DetailFragment();
+    public static ToursListFragment createInstance(String attractionName) {
+        ToursListFragment detailFragment = new ToursListFragment();
         Bundle bundle = new Bundle();
         bundle.putString(EXTRA_ATTRACTION, attractionName);
         detailFragment.setArguments(bundle);
         return detailFragment;
     }
 
-    public DetailFragment() {}
+    public ToursListFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

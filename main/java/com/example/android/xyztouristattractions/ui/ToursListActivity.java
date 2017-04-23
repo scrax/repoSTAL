@@ -33,7 +33,7 @@ import com.example.android.xyztouristattractions.R;
  * The tourist attraction detail activity screen which contains the details of
  * a single attraction.
  */
-public class DetailActivity extends AppCompatActivity {
+public class ToursListActivity extends AppCompatActivity {
 
     private static final String EXTRA_ATTRACTION = "attraction";
 
@@ -50,7 +50,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     public static Intent getLaunchIntent(Context context, String attraction) {
-        Intent intent = new Intent(context, DetailActivity.class);
+        Intent intent = new Intent(context, ToursListActivity.class);
         intent.putExtra(EXTRA_ATTRACTION, attraction);
         return intent;
     }
@@ -63,14 +63,14 @@ public class DetailActivity extends AppCompatActivity {
         String attraction = getIntent().getStringExtra(EXTRA_ATTRACTION);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, DetailFragment.createInstance(attraction))
+                    .add(R.id.container, ToursListFragment.createInstance(attraction))
                     .commit();
         }
     }
 
     //Codice per aprire pagina itinerario
     public void caricaItinerario(View view) {
-        Intent intent = new Intent(this, itinerariActivity.class);
+        Intent intent = new Intent(this, PoiListActivity.class);
         startActivity(intent);
     }
 }

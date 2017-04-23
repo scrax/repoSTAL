@@ -10,7 +10,7 @@
             android:layout_height="match_parent"
             android:background="#E8F5E9"
             android:orientation="vertical"
-            tools:context="com.example.android.xyztouristattractions.ui.itinerariActivity">
+            tools:context="com.example.android.xyztouristattractions.ui.PoiListActivity">
 
             <ImageView
                 android:id="@+id/mapItinerario"

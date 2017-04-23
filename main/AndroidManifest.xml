@@ -48,12 +48,12 @@
             android:parentActivityName=".ui.introActivity"
             android:theme="@style/XYZAppTheme.Detail" />
         <activity
-            android:name=".ui.DetailActivity"
+            android:name=".ui.ToursListActivity"
             android:label="@string/app_name"
             android:parentActivityName=".ui.ParcsListActivity"
             android:theme="@style/XYZAppTheme.Detail" />
         <activity
-            android:name=".ui.itinerariActivity"
+            android:name=".ui.PoiListActivity"
             android:label="@string/app_name"
             android:parentActivityName=".ui.introActivity"
             android:theme="@style/XYZAppTheme.Detail" />

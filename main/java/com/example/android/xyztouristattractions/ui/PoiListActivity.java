@@ -6,12 +6,12 @@ import android.view.MenuItem;
 
 import com.example.android.xyztouristattractions.R;
 
-public class itinerariActivity extends AppCompatActivity {
+public class PoiListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_itinerario);
+        setContentView(R.layout.activity_poi_list);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

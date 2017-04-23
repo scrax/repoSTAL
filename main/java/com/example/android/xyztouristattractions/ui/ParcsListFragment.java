@@ -191,7 +191,7 @@ public class ParcsListFragment extends Fragment {
             if (!mItemClicked) {
                 mItemClicked = true;
                 View heroView = view.findViewById(android.R.id.icon);
-                DetailActivity.launch(
+                ToursListActivity.launch(
                         getActivity(), mAdapter.mAttractionList.get(position).name, heroView);
             }
         }

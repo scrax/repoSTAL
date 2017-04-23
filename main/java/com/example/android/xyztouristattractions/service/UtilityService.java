@@ -36,7 +36,7 @@ import com.example.android.xyztouristattractions.common.Attraction;
 import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
-import com.example.android.xyztouristattractions.ui.DetailActivity;
+import com.example.android.xyztouristattractions.ui.ToursListActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderApi;
@@ -347,7 +347,7 @@ public class UtilityService extends IntentService {
 
         // The intent to trigger when the notification is tapped
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-                DetailActivity.getLaunchIntent(this, attraction.name),
+                ToursListActivity.getLaunchIntent(this, attraction.name),
                 PendingIntent.FLAG_UPDATE_CURRENT);
 
         // The intent to trigger when the notification is dismissed, in this case
