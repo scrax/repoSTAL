@@ -101,7 +101,7 @@ public class ParcsListActivity extends AppCompatActivity implements
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.container);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.toolbar_container);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -160,15 +160,11 @@ public class ParcsListActivity extends AppCompatActivity implements
             caricaSend(id);
         }
 */
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.container);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.toolbar_container);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    public void caricaListaParchi(View view) {
-        Intent intent = new Intent(this, ParcsListActivity.class);
-        startActivity(intent);
-    }
     /*public void caricaDiario(int id) {
         Intent intent = new Intent(this, DiarioActivity.class);
         startActivity(intent);
