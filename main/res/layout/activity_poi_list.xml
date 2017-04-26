@@ -58,7 +58,7 @@
                         <ImageView
                             android:id="@+id/imageView8"
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_height="24dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_weight="2"
                             android:alpha="0.5"
@@ -69,24 +69,24 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4"
-                            android:gravity="center_vertical|center_horizontal"
+                            android:gravity="left|center_horizontal"
                             android:text="@string/tempoPrevisto"
                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
                         <ImageView
                             android:id="@+id/imageView9"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="24dp"
                             android:layout_weight="2"
                             android:alpha="0.5"
-                            app:srcCompat="@drawable/ic_trending_flat_black_48dp" />
+                            app:srcCompat="@drawable/ic_distance_black_48dp" />
 
                         <TextView
                             android:id="@+id/textView8"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4"
-                            android:gravity="center_vertical|center_horizontal"
+                            android:gravity="left|center_horizontal"
                             android:text="@string/lungPerc"
                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
@@ -95,26 +95,42 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:gravity="left"
                         android:orientation="horizontal"
                         android:padding="8dp"
-                        android:weightSum="20">
+                        android:weightSum="4">
 
                         <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:alpha="0.5"
-                            app:srcCompat="@drawable/ic_local_florist_black_24dp" />
+                            app:srcCompat="@drawable/ic_naturetheme_black_48dp" />
 
                         <ImageView
                             android:id="@+id/imageView11"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:alpha="0.5"
                             android:elevation="0dp"
-                            app:srcCompat="@drawable/ic_panorama_black_24dp" />
+                            app:srcCompat="@drawable/ic_landscapetheme_black_48dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_historytheme_black_48dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_etnographytheme_black_48dp" />
 
                     </LinearLayout>
 
